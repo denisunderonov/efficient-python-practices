@@ -1,63 +1,43 @@
-# Intro to Python: Efficient code practices
+# Efficient Python Practices
 
-Summary: Today we will help you write code that works faster.
+Учебный проект по оптимизации Python-кода в рамках School 21.
 
-💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
+В проекте сравниваются разные подходы к обработке данных и измеряется их эффективность по времени выполнения и потреблению памяти.
 
-## Contents
+## Что было изучено
 
-1. [Chapter I](#chapter-i) \
-    1.1. [Foreword](#foreword)
-2. [Chapter II](#chapter-ii) \
-    2.1. [Instructions](#instructions)
-3. [Chapter III](#chapter-iii) \
-    3.1. [Specific instructions for the day](#specific-instructions-for-the-day)
-4. [Chapter IV](#chapter-iv) \
-    4.1. [Exercise 00. List comprehensions](#exercise-00-list-comprehensions)
-5. [Chapter V](#chapter-v) \
-    5.1. [Exercise 01. Map](#exercise-01-map)
-6. [Chapter VI](#chapter-vi) \
-    6.1. [Exercise 02. Filter](#exercise-02-filter)
-7. [Chapter VII](#chapter-vii) \
-    7.1. [Exercise 03. Reduce](#exercise-03-reduce)
-8. [Chapter VIII](#chapter-viii) \
-    8.1. [Exercise 04. Counter](#exercise-04-counter)
-9. [Chapter IX](#chapter-ix) \
-    9.1. [Exercise 05. Generator](#exercise-05-generator)
-    
-   
-## Chapter I
+* List comprehensions и циклы;
+* `map()` и `filter()`;
+* `reduce()`;
+* `Counter` для подсчёта элементов;
+* генераторы и `yield`;
+* измерение времени выполнения через `timeit`;
+* анализ потребления памяти;
+* работа с большими файлами.
 
-### Foreword
+## Практика
 
-- There are two English words that are often confused: "efficiency" and "effectiveness".
-- To highlight the difference, here's a short joke: \
-    My motto is "Efficiency. Efficiency. Efficiency". Oops! I guess I only need to say it once.
-- Or, as Peter Drucker once said: "Efficiency is doing things right; effectiveness is doing the right things".
-- Your code should be both effective and efficient. And vice versa.
-- One of the best games for learning efficiency is Factorio. Google it.
+В отдельных упражнениях сравниваются:
 
-Download it. Try to get back to Module 4. Not everyone will be able to.
+* скорость разных способов обработки списков;
+* эффективность встроенных функций Python;
+* обычное чтение большого файла и чтение через генератор;
+* потребление RAM при работе с большим объёмом данных.
 
-## Chapter II
+В качестве большого набора данных используется MovieLens `ratings.csv`.
 
-### Instructions
+## Стек
 
-How to learn at “School 21”:
+* Python
+* `timeit`
+* `collections`
+* генераторы
+* `functools`
+* `resource`
 
-- Here, you’ll find a unique learning experience with a lot of freedom. You’re given a task and left to find your own way to solve it, using whatever resources work best for you — whether that’s the Internet or AI tools like GigaChat. Just be mindful of information quality: verify, think critically, analyze, and compare.
-- Peer-to-peer (P2P) learning is the exchange of knowledge and experience with peers, where everyone acts as both mentor and student. This approach allows you to gain a deeper understanding of the material by learning from one another.
-- Feel free to ask for help: around you are peers who are also navigating this path for the first time. Share your own experience and ideas with others.  Join Rocket.Chat to stay updated with the latest community announcements. 
-- Your learning is meaningless if you just copy someone else’s solutions. When receiving help from others, always make sure you fully understand the “why”, “how”, and “purpose” behind the solution. Don’t be afraid to make mistakes. 
-- Does the task seem impossible? Take a break, get some fresh air and clear your mind — this has helped many people. Maybe after that, the solution will come to you naturally.
-- The learning process is just as important as the result. It’s not just about completing the task — it’s about understanding HOW to solve it. 
+## Цель
 
-How to work with the project:
-
-* Use this page as your only reference. Do not pay attention to rumors or speculation about how to prepare your solution.
-* Here and throughout, we use Python 3 as the only correct version of Python.
-* The python files for python exercises (module01, module02, module03) must have the following block at the end: `if __name__ == ‘__main__’`.
-* Pay attention to the permissions of your files and directories.
+На практике разобраться, как выбирать более эффективные конструкции Python и учитывать не только скорость выполнения, но и потребление памяти при работе с данными.
 * To be assessed your solution must be in your GIT repository.
 * Your solutions will be evaluated by your peers in the bootcamp.
 * You should not leave any other files in your directory other than those explicitly specified in the exercise instructions. It is recommended that you modify your .gitignore to avoid any accidents.
